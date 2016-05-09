@@ -2,8 +2,8 @@
 import types
 
 
-# Stragety design pattern
-class StragetyExample:
+# Strategy design pattern
+class StrategyExample:
     def __init__(self, func=None):
         self.name = 'Strategy Example 0'
         if func is not None:
@@ -23,12 +23,12 @@ def execute_replacement2(self):
 
 
 if __name__ == '__main__':
-    strat0 = StragetyExample()
+    strat0 = StrategyExample()
 
-    strat1 = StragetyExample(execute_replacement1)
+    strat1 = StrategyExample(execute_replacement1)
     strat1.name = 'Strategy Example 1'
 
-    strat2 = StragetyExample(execute_replacement2)
+    strat2 = StrategyExample(execute_replacement2)
     strat2.name = 'Strategy Example 2'
 
     strat0.execute()  # 调用默认的execute
