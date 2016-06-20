@@ -19,4 +19,4 @@ def b():
     pass
 
 
-print handlers
+print(handlers)
